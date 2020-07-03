@@ -24,8 +24,8 @@ build() {
 
 }
 
-mkdir build
-mkdir pkg
+mkdir -p build
+mkdir -p pkg
 cd build
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/mauikit-git
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phone-components-git
