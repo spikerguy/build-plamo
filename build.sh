@@ -2,7 +2,7 @@
 
 buildinstall() {
 	P=$(pwd)
-		
+	cd $1	
 	
 	makepkg --ignorearch --syncdeps --clean --cleanbuild --force --noconfirm --install
 	
@@ -14,7 +14,7 @@ buildinstall() {
 }
 build() {
 	P=$(pwd)
-	
+	cd $1
 	
 		
 	makepkg --ignorearch --syncdeps --clean --cleanbuild --force --noconfirm 
@@ -50,8 +50,8 @@ git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobil
 
 
 
-build mauikit-git
-build plasma-phone-components-git/
+buildinstall mauikit-git
+buildinstal plasma-phone-components-git/
 build plasma-phonebook-git/
 build plasma-dialer-git/
 build plasma-camera-git/
