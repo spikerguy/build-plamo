@@ -24,33 +24,33 @@ build() {
 
 }
 
-#mkdir build
+mkdir build
+mkdir pkg
 cd build
-#git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/mauikit-git
-#git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phone-components-git#
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phonebook-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-dialer-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-camera-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-angelfish-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/qmlkonsole-git
-# # git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/buho-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/spacebear-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/nota-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/voicememo-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/calindori-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-nano-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/index-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/vvave-git
-# git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-pix-git
-pwd
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/mauikit-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phone-components-git#
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phonebook-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-dialer-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-camera-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-angelfish-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/qmlkonsole-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/buho-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/spacebear-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/nota-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/voicememo-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/calindori-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-nano-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/index-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/vvave-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-pix-git
 
 #git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/kwin-git
 #git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/libkscreen-git
 #git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/telepathy-kde-common-internals-git
-cd ..
 
-pwd
-build build/mauikit-git
+
+
+build mauikit-git
 build plasma-phone-components-git/
 build plasma-phonebook-git/
 build plasma-dialer-git/
