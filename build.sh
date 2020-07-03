@@ -25,8 +25,9 @@ build() {
 }
 
 mkdir -p build
-mkdir -p pkg
+
 cd build
+mkdir -p pkg
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/mauikit-git
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phone-components-git
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-phonebook-git
@@ -51,7 +52,7 @@ git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobil
 
 
 buildinstall mauikit-git
-buildinstal plasma-phone-components-git/
+buildinstall plasma-phone-components-git/
 build plasma-phonebook-git/
 build plasma-dialer-git/
 build plasma-camera-git/
