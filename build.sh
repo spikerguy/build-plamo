@@ -8,7 +8,7 @@ buildinstall() {
 	
 	# in case there's nothing to copy, don't fail
 	cp -n *.pkg.tar.xz $P/pkg || true
-	
+	cd ..
 
 	
 }
@@ -21,7 +21,7 @@ build() {
 	
 	# in case there's nothing to copy, don't fail
 	cp -n *.pkg.tar.xz $P/pkg || true
-
+	cd ..
 }
 
 mkdir -p build
