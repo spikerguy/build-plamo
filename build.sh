@@ -7,7 +7,7 @@ buildinstall() {
 	makepkg --ignorearch --syncdeps --clean --cleanbuild --force --noconfirm --install
 	
 	# in case there's nothing to copy, don't fail
-	cp -n *.pkg.tar.xz $P/pkg || true
+	cp -n *.pkg.tar.xz ../pkg || true
 	cd ..
 
 	
@@ -20,7 +20,7 @@ build() {
 	makepkg --ignorearch --syncdeps --clean --cleanbuild --force --noconfirm 
 	
 	# in case there's nothing to copy, don't fail
-	cp -n *.pkg.tar.xz $P/pkg || true
+	cp -n *.pkg.tar.xz ../pkg || true
 	cd ..
 }
 
@@ -44,9 +44,8 @@ git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobil
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/index-git
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/vvave-git
 git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/plasma-pix-git
-
-#git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/kwin-git
-#git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/libkscreen-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/kwin-git
+git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/libkscreen-git
 #git clone https://gitlab.manjaro.org/manjaro-arm/packages/community/plasma-mobile/telepathy-kde-common-internals-git
 
 
@@ -67,7 +66,6 @@ build index-git/
 build vvave-git/
 build nota-git/
 build buho-git/
-
-#build kwin-git
-#build libkscreen-git
+build kwin-git
+build libkscreen-git
 #build telepathy-kde-common-internals-git
